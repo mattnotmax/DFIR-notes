@@ -1,6 +1,6 @@
-# Exploitation Tools
+# Exploitation
 
-Info relating to offensive exploitation tools, use, and detection. In no particular order
+Info relating to offensive exploitation, tools, use, and detection. In no particular order
 
 ## #DailyToolDrop
 
@@ -24,6 +24,13 @@ Summary of @QW5kcmV3 series #DailyToolDrop which started 2019-08-07:
 - [Empire](https://github.com/EmpireProject/Empire)
 - [SafetyKatz](https://github.com/GhostPack/SafetyKatz)
 - [QuasarRat](https://github.com/quasar/QuasarRAT)
+
+## Living Off The Land
+
+Lolbins and other native exploitation snippets
+
+[Windows LOLBAS](https://lolbas-project.github.io/)
+[Unix GTFOBINS](https://gtfobins.github.io/)
 
 
 
