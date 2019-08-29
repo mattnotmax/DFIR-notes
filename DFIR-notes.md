@@ -28,6 +28,7 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [Tunna](https://github.com/SECFORCE/Tunna): Tunna is a set of tools which will wrap and tunnel any TCP communication over HTTP. It can be used to bypass network restrictions in fully firewalled environments.
 - [powercat](https://github.com/besimorhino/powercat): Netcat: The powershell version. 
 - [Ruler](https://github.com/sensepost/ruler): A tool to abuse Exchange services.
+- [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation): Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
 
 ## Living Off The Land
 
