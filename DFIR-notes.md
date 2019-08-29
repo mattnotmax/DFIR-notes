@@ -1,8 +1,8 @@
-Info relating to DFIR, offensive exploitation, tools, and detection. In no particular order.
+Info relating to DFIR, offensive exploitation, tools, and detection. In no particular order. Always updating.
 
 ## #DailyToolDrop
 
-Summary of @QW5kcmV3 series #DailyToolDrop which started 2019-08-07:
+Summary of [@QW5kcmV3](https://twitter.com/QW5kcmV3) series [#DailyToolDrop](https://twitter.com/search?q=%23dailytooldrop&src=typed_query) which started 2019-08-07:
 - [POSHC2](https://github.com/nettitude/PoshC2): PoshC2 is a proxy aware C2 framework that utilises Powershell and/or equivalent (System.Management.Automation.dll) to aid penetration testers with red teaming, post-exploitation and lateral movement.
 - [Invoke-PSImage](https://github.com/peewpw/Invoke-PSImage): Embeds a PowerShell script in the pixels of a PNG file and generates a oneliner to execute
 - [pupy](https://github.com/n1nj4sec/pupy): Pupy is a cross-platform, multi function RAT and post-exploitation tool mainly written in python. 
