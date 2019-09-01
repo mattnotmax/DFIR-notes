@@ -29,6 +29,8 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [powercat](https://github.com/besimorhino/powercat): Netcat: The powershell version. 
 - [Ruler](https://github.com/sensepost/ruler): A tool to abuse Exchange services.
 - [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation): Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
+- [koadic](https://github.com/zerosum0x0/koadic): Koadic, or COM Command & Control, is a Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire.
+- [SharpHound](https://github.com/BloodHoundAD/SharpHound): C# Rewrite of the BloodHound Ingestor
 
 ## Living Off The Land
 
