@@ -34,6 +34,25 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit - A PowerShell Post-Exploitation Framework
 - [androrat](https://github.com/DesignativeDave/androrat): Remote Administration Tool for Android
 
+## One-Liners
+
+[Unique hash of every executable running](https://twitter.com/CyberRaiju/status/1151111821807349760)
+
+```$A = $( foreach ($process in Get-WmiObject win32_process | where {$_.ExecutablePath -notlike ""}) {Get-FileHash $process.ExecutablePath | select Hash -ExpandProperty Hash}) |Sort-Object| Get-Unique;$A```
+
+[Missing Windows Updates](https://twitter.com/wincmdfu/status/1140668272821460995)
+
+```(New-Object -ComObject microsoft.update.session).CreateUpdateSearcher().Search("IsHidden=0 and IsInstalled=0").Updates | select Title,RebootRequired,CVEIds,IsMandatory```
+
+[Disable Defender Remotely to Execute Code](https://twitter.com/Killswitch_GUI/status/1125930621346488320)
+
+```Invoke-WmiMethod -ComputerName 10.0.1.2 -Class Win32_Process -Name Create -ArgumentList "powershell.exe -C `Set-MpPreference -DisableRealtimeMonitoring $true`"```
+
+[List of IPs that have connected via RDP](https://twitter.com/wincmdfu/status/1098234743752032256)
+
+```Get-WinEvent -Log 'Microsoft-Windows-TerminalServices-LocalSessionManager/Operational' | select -exp Properties | where {$_.Value -like '*.*.*.*' } | sort Value -u```
+
+
 ## Living Off The Land
 
 Lolbins and other native exploitation snippets
