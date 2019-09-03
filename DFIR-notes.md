@@ -31,6 +31,8 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation): Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
 - [koadic](https://github.com/zerosum0x0/koadic): Koadic, or COM Command & Control, is a Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire.
 - [SharpHound](https://github.com/BloodHoundAD/SharpHound): C# Rewrite of the BloodHound Ingestor
+- [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit - A PowerShell Post-Exploitation Framework
+- [androrat](https://github.com/DesignativeDave/androrat): Remote Administration Tool for Android
 
 ## Living Off The Land
 
