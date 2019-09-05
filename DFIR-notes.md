@@ -33,6 +33,8 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [SharpHound](https://github.com/BloodHoundAD/SharpHound): C# Rewrite of the BloodHound Ingestor
 - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit): PowerSploit - A PowerShell Post-Exploitation Framework
 - [androrat](https://github.com/DesignativeDave/androrat): Remote Administration Tool for Android
+- [PAExec](https://github.com/poweradminllc/PAExec): PAExec is a free, redistributable and open source equivalent to Microsoft's popular PsExec application
+- [quarkspwdump](https://github.com/quarkslab/quarkspwdump): Dump various types of Windows credentials without injecting in any process
 
 ## One-Liners
 
