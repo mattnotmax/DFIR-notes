@@ -35,6 +35,9 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [androrat](https://github.com/DesignativeDave/androrat): Remote Administration Tool for Android
 - [PAExec](https://github.com/poweradminllc/PAExec): PAExec is a free, redistributable and open source equivalent to Microsoft's popular PsExec application
 - [quarkspwdump](https://github.com/quarkslab/quarkspwdump): Dump various types of Windows credentials without injecting in any process
+- [Windows Credential Editor](https://packetstormsecurity.com/files/121843/Windows-Credential-Editor-1.4-Beta.html): Windows Credentials Editor (WCE) allows you to list logon sessions and add, change, list and delete associated credentials. 
+- [DARKCOMET](http://www.darkcomet-rat.com/) & [DARKCOMET Abuse](https://www.wired.com/2012/07/dark-comet-syrian-spy-tool/): RAT
+
 
 ## One-Liners
 
