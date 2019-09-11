@@ -37,6 +37,10 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [quarkspwdump](https://github.com/quarkslab/quarkspwdump): Dump various types of Windows credentials without injecting in any process
 - [Windows Credential Editor](https://packetstormsecurity.com/files/121843/Windows-Credential-Editor-1.4-Beta.html): Windows Credentials Editor (WCE) allows you to list logon sessions and add, change, list and delete associated credentials. 
 - [DARKCOMET](http://www.darkcomet-rat.com/) & [DARKCOMET Abuse](https://www.wired.com/2012/07/dark-comet-syrian-spy-tool/): RAT
+- [nbtscan](http://www.unixwiz.net/tools/nbtscan.html): This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares.
+[METERPRETER](https://github.com/rapid7/metasploit-framework/wiki/Meterpreter): Metaspolit payload
+- [Bitvise](https://www.bitvise.com/): SSH client/server
+[Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit): A collection of open source and commercial tools that aid in red team operations.
 
 
 ## One-Liners
