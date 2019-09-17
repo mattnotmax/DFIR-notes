@@ -42,6 +42,44 @@ To Do: add links and notes for detection and post-exploitation analysis.
 - [Bitvise](https://www.bitvise.com/): SSH client/server
 [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit): A collection of open source and commercial tools that aid in red team operations.
 
+## Writable by user Windows directories
+
+Source: https://twitter.com/mattifestation/status/1172520995472756737
+
+%windir%\system32\microsoft\crypto\rsa\machinekeys
+
+%windir%\system32\tasks_migrated\microsoft\windows\pla\system
+
+%windir%\syswow64\tasks\microsoft\windows\pla\system
+
+%windir%\debug\wia
+
+%windir%\system32\tasks
+
+%windir%\syswow64\tasks
+
+%windir%\tasks
+
+%windir%\registration\crmlog
+
+%windir%\system32\com\dmp
+
+%windir%\system32\fxstmp
+
+%windir%\system32\spool\driver\color
+
+%windir%\system32\spool\printers
+
+%windir%\system32\spool\servers
+
+%windir%\syswow64\com\dmp
+
+%windir%\syswow64\fxstmp
+
+%windir%\temp
+
+%windir%\tracing
+
 
 ## One-Liners
 
