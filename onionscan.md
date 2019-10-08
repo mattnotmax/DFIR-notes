@@ -117,6 +117,12 @@ High Risk: Apache mod_status is enabled and accessible
 linux@Matt:~/go/bin$
 ```
 
+## Get SSH Fingerprint for Shodan searching
+
+```
+ ssh-keygen -E md5 -lf <(ssh-keyscan thisisyouronionsitev3blahblahblah.onion 2>/dev/null)
+```
+
 ## Enjoy!
 
 ## Useful Links & References
