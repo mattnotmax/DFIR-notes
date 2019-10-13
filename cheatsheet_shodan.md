@@ -15,6 +15,24 @@
 `has_screenshot:true` Filter search based on a screenshot being present  
 `title:` Search based on text within the title  
 
+## Shodan Command Line
+
+Credits:  
+Every query credit gets you up to 100 results, which means that you can download at least 10,000 results every month - regardless of the type of search you're performing.
+
+Initialising:  
+`shodan init YOUR_API_KEY`  
+
+Basic syntax:  
+`shodan download --limit <number of results> <filename> <search query>`
+
+NB: the filename should be `.json.gz`  
+
+Using the `parse` command:  
+`shodan parse --fields ip_str,port,hostname --separator , youroutput.json.gz`
+
+Convert to CSV:  
+`shodan convert output.json.gz csv`
 
 
 ## Incident Response
@@ -26,12 +44,12 @@
 
 ### Metaspolit
 ```
-ssl: "MetasploitSelfSignedCA" http.favicon.hash: "-127886975"
+ssl:"MetasploitSelfSignedCA" http.favicon.hash:"-127886975"
 ```
 
 ### Empire
 ```
-http.html_hash: "611100469"
+http.html_hash:"611100469"
 ```
 
 ### Responder
