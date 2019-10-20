@@ -73,7 +73,11 @@ Write-Host "------Making Firewall rule"
 & netsh advfirewall firewall add rule name="winRM HTTPS" dir=in action=allow protocol=TCP localport=5986
 
 Write-Host "------Testing WinRM"
-& test-wsman $dnsIP4
+& Test-WSman $dnsIP4
+& WinRM e winrm/config/listener
 ```
+
+4. Then, from source via Powershell `$so = New-PsSessionOption -SkipCACheck -SkipCNCheck` and `Enter-PSSession -ComputerName <IP_ADDRESS> -Credential Administrator -UseSSL -SessionOption $so`
+
 
 
