@@ -79,5 +79,6 @@ Write-Host "------Testing WinRM"
 
 4. Then, from source via Powershell `$so = New-PsSessionOption -SkipCACheck -SkipCNCheck` and `Enter-PSSession -ComputerName <IP_ADDRESS> -Credential Administrator -UseSSL -SessionOption $so`
 
+Additional Source: https://cloudblogs.microsoft.com/industry-blog/en-gb/cross-industry/2016/02/11/configuring-winrm-over-https-to-enable-powershell-remoting/
 
 
