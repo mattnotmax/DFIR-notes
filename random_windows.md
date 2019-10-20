@@ -41,3 +41,39 @@ Source: https://twitter.com/mattifestation/status/1172520995472756737
 [List of IPs that have connected via RDP](https://twitter.com/wincmdfu/status/1098234743752032256)
 
 ```Get-WinEvent -Log 'Microsoft-Windows-TerminalServices-LocalSessionManager/Operational' | select -exp Properties | where {$_.Value -like '*.*.*.*' } | sort Value -u```
+
+
+## Access AWS Server on WinRM via HTTPS from external IP
+
+1. Ensure that network security group allows inbound WinRM_HTTP/TCP/5986.  
+2. Restric this access to your Public IP.  
+3. Run below code (Adapted From Source: https://gist.github.com/andrewiankidd/f47e8bc7d6a2cc68711e8d3e01850b8a)
+
+```
+$dnsIP4 = curl http://169.254.169.254/latest/meta-data/public-hostname | Select-Object -ExpandProperty Content
+
+##enable winrm
+Write-Host "------Enabling WinRM (HTTP)"
+winrm quickconfig -q
+
+Write-Host "------Genning Thumbprint"
+#get thumbprint
+$thumbprint = (New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsname $dnsIP4 -NotAfter (Get-Date).AddMonths(36)).Thumbprint
+
+Write-Host "------Proceeding with following details"
+#create cert
+Write-Host dnsIP4: $dnsIP4, thumbprint: $thumbprint
+$cmd = 'winrm create winrm/config/listener?Address=*+Transport=HTTPS `@`{Hostname=`"$dnsIP4`"`; CertificateThumbprint=`"$thumbprint`"`}'
+
+Write-Host "------Enabling WinRM (HTTPS)"
+Invoke-Expression $cmd
+
+Write-Host "------Making Firewall rule"
+#poke hole in firewall
+& netsh advfirewall firewall add rule name="winRM HTTPS" dir=in action=allow protocol=TCP localport=5986
+
+Write-Host "------Testing WinRM"
+& test-wsman $dnsIP4
+```
+
+
