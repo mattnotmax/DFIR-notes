@@ -108,7 +108,7 @@ Examples:
 `--open`: show only open ports.  
 `-A`: Aggressive scanning: Same as `-O -sV -sC --traceroute`.  
 
-NMAP Port States:
+### NMAP Port States:
 
 `open`: Application is actively accepting TCP/UDP connections.  
 `closed`: Port is accessible but no application listening on it.  
