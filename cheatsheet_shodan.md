@@ -15,6 +15,7 @@
 `has_screenshot:true` Filter search based on a screenshot being present  
 `title:` Search based on text within the title  
 `asn:` Search ASN e.g. 'AS12345'  
+`ssl.jarm:` Search by JARM fingerprint  
 
 ## Shodan Command Line
 
