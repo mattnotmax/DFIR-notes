@@ -15,7 +15,7 @@ Source: https://twitter.com/mattifestation/status/1172520995472756737
 %windir%\registration\crmlog
 %windir%\system32\com\dmp
 %windir%\system32\fxstmp
-%windir%\system32\spool\driver\color
+%windir%\system32\spool\drivers\color
 %windir%\system32\spool\printers
 %windir%\system32\spool\servers
 %windir%\syswow64\com\dmp
